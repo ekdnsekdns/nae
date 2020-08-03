@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.4" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.sun.security.ntlm.Client" project="CHAT2" 
+    file="C:/Program Files/Java/jre1.8.0_251/lib/rt.jar" binary="true" label="client" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="817" y="0"/>    
+    <execution id="2">      
+      <position height="456" width="100" x="5" y="99"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="javax.servlet.jsp.JspApplicationContext" project="home2" 
+    file="E:/dev/apache-tomcat-8.5.57/lib/jsp-api.jar" binary="true" label="jspApplicationContext" type="interface" 
+    autoSize="true">    
+    <position height="-1" width="-1" x="989" y="0"/>    
+    <execution id="4">      
+      <position height="414" width="151" x="109" y="120"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="21" width="7" x="181" y="345"/>    
+    </execution>  
+  </object>  
+  <object id="9" language="java" name="lecture.controller.lectureAddServlet" project="naehaksa" 
+    file="/naehaksa/src/lecture/controller/lectureAddServlet.java" binary="false" label="lectureAddServlet" type="class" 
+    autoSize="false">    
+    <position height="533" width="138" x="259" y="0"/>    
+    <execution id="7">      
+      <position height="354" width="125" x="264" y="159"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="63" width="7" x="323" y="324"/>    
+    </execution>  
+  </object>  
+  <object id="14" language="java" name="lecture.service.LectureService" project="naehaksa" 
+    file="/naehaksa/src/lecture/service/LectureService.java" binary="false" label="lectureService" type="class" 
+    autoSize="false">    
+    <position height="512" width="179" x="388" y="0"/>    
+    <execution id="11">      
+      <position height="305" width="110" x="393" y="187"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="105" width="7" x="445" y="303"/>    
+    </execution>  
+  </object>  
+  <object id="19" language="java" name="lecture.model.LectureDao" project="naehaksa" 
+    file="/naehaksa/src/lecture/model/LectureDao.java" binary="false" label="lectureDao" type="class" autoSize="false">    
+    <position height="491" width="270" x="567" y="0"/>    
+    <execution id="16">      
+      <position height="263" width="89" x="507" y="208"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="173" width="7" x="548" y="256"/>    
+    </execution>  
+  </object>  
+  <object id="24" language="java" name="java.sql.SQLData" project="CHAT2" 
+    file="C:/Program Files/Java/jre1.8.0_251/lib/rt.jar" binary="true" label="sqlData" type="interface" autoSize="false">    
+    <position height="470" width="104" x="837" y="0"/>    
+    <execution id="21">      
+      <position height="217" width="73" x="600" y="233"/>    
+    </execution>  
+  </object>  
+  <message id="3" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="10" operation="insertLecture(lecture.vo.Lecture):int" asynchronous="false">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="13" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="15" operation="insertLecture(java.sql.Connection,lecture.vo.Lecture):int" asynchronous="false">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="18" asynchronous="false">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="20" asynchronous="false">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="23" operation="insertLecture(lecture.vo.Lecture):int" asynchronous="false">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="25" asynchronous="false">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>
+</sequence-diagram>
